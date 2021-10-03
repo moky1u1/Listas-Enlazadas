@@ -3,6 +3,7 @@ import lcse.ListaCircularSimplementeEnlazada;
 import lde.ListaDoblementeEnlazada;
 import lse.ListaSimplementeEnlazada;
 import pc.Cola;
+import pc.Pila;
 
 public class Main {
     public static void main(String[] args) {
@@ -91,7 +92,7 @@ public class Main {
         listaCircularDoblementeEnlazada.mostrarAtras(7);
          */
 
-
+        /*
         Cola cola = new Cola();
         System.out.println(cola.estaVacia());
 
@@ -103,5 +104,21 @@ public class Main {
         cola.eliminar();
         cola.eliminar();
         cola.mostrar();
+
+         */
+
+        Pila pila = new Pila();
+        System.out.println(pila.estaVacia());
+
+        for (int i = 1; i <= 5 ; i++) {
+            pila.insertar(i);
+        }
+        pila.mostrar();
+
+        pila.eliminar();
+        pila.eliminar();
+        pila.eliminar();
+
+        pila.mostrar();
     }
 }
