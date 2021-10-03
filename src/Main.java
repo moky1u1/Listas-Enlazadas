@@ -2,6 +2,7 @@ import lcde.ListaCircularDoblementeEnlazada;
 import lcse.ListaCircularSimplementeEnlazada;
 import lde.ListaDoblementeEnlazada;
 import lse.ListaSimplementeEnlazada;
+import pc.Cola;
 
 public class Main {
     public static void main(String[] args) {
@@ -73,7 +74,7 @@ public class Main {
         listaCircularSimplementeEnlazada.mostrarCircular(2);
          */
 
-
+        /*
         ListaCircularDoblementeEnlazada listaCircularDoblementeEnlazada = new ListaCircularDoblementeEnlazada();
         System.out.println(listaCircularDoblementeEnlazada.estaVacia());
 
@@ -88,5 +89,19 @@ public class Main {
 
         listaCircularDoblementeEnlazada.mostrarAdelante(7);
         listaCircularDoblementeEnlazada.mostrarAtras(7);
+         */
+
+
+        Cola cola = new Cola();
+        System.out.println(cola.estaVacia());
+
+        for (int i = 1; i <= 5; i++) {
+            cola.insertar(i);
+        }
+        cola.mostrar();
+
+        cola.eliminar();
+        cola.eliminar();
+        cola.mostrar();
     }
 }
